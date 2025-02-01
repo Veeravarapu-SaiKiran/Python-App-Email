@@ -3,7 +3,7 @@ on: [push]
 env:
   AWS_REGION: ap-south-1
   AWS_ECR_REPOSITORY: github-python-app
-  IMAGE_TAG: ${{ github.ref_name }}-${{ github.sha }}
+  IMAGE_TAG: v1 
 jobs:
   push_docker_image_ecr:
     runs-on: ubuntu-latest
